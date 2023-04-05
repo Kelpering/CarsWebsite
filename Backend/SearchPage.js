@@ -1,3 +1,9 @@
+$.expr[":"].contains = $.expr.createPseudo(function(arg) {
+    return function( elem ) {
+        return $(elem).text().toUpperCase().indexOf(arg.toUpperCase()) >= 0;
+    };
+}); //Makes :contains() case in-sensitive
+
 $(function(){
 
     $(".car").hide();

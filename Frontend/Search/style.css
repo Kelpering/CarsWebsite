@@ -15,3 +15,9 @@
 .cf {
     *zoom: 1;
 }
+
+ul
+{
+    float:left;
+    list-style-type:armenian;
+}
